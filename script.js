@@ -9,20 +9,18 @@ if(k&&j[k]&&(e||j[k].data)||void 0!==d||"string"!=typeof b)return k||(k=i?a[h]=c
 $(document).ready(function() {
 	$('.main-nav').click(function(e) {
 		var url = $(this).attr("href");
-			$("#main-links").animate({
-				opacity: 0,
-				top: "+=50"
-			}, function () {
-				var content = $("#"+url).html();
-				
-				$("#main-links").html(content).css("top","-50");
-				$("#main-links").animate({
-						opacity: 1,
-						top: "0"
-				});
-				
-			});
-			//$("#"+url).slideDown("slow");
+        $("#center-image").children().animate({
+            opacity: 0,
+            left: "+=50"
+        }, function() {
+            var content = $("#"+url).html();
+            $("#center-image").children().remove();
+				$("#center-image").html(content).css("top", "-100");
+            $("#"+url).animate({
+                right: "+=50",
+                opacity: "1"
+            });
+        });
 			if (document.URL.search(url) < 0) {
 				//navchange(url);
 			}	
