@@ -1,0 +1,65 @@
+ul.nav {
+    float: right;
+    margin-top: 1%;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#home {
+    background-image: url("background.jpg");
+    background-position: center;
+}
+
+#header img {
+    max-width: 100%;
+    float:none;
+}
+
+a.scroll-link {
+
+}
+
+ul li a:hover{
+    text-decoration:none;
+    color:#fff;
+}
+
+div.scroll-page {
+    width: 100%;
+    margin: 0px;
+    float: left;
+    height: 4000px;
+}
+
+li {
+    margin-top: 1%;
+    list-style-type: none;
+}
+
+#general-dermatology {
+  background-color: #3cd53c;
+}
+
+#about {
+  background-color: #168017;
+}
+
+#cosmetic-dermatology {
+    background-color: #32803a;
+}
+
+#resources {
+    background-color: #2b923a;
+}
+
+#contact {
+    background-color: #0c8045;
+}
+
+#news {
+   background-color: #78c124;
+}
